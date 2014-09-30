@@ -1,0 +1,75 @@
+#userEntryBox {
+	background-color: #8A0829;
+	border: 3px solid black;
+	color: white;
+	padding:5px;
+	height: 220px;
+	width: 400px;
+	border-radius: 10px;
+	text-align: center;
+	margin:auto;
+	font-size: 20px;
+}
+
+.button {
+	height: 35px;
+	width: 120px;
+	border: 3px solid black;
+	border-radius: 10px;
+	background-color: white;
+	color:#0B614B;
+	text-align: center;
+	padding: 10px;
+	font-size: 17px;
+	margin: 10px;
+	float:left;
+
+}
+#addButton {
+	height: 35px;
+	width: 120px;
+	border: 3px solid black;
+	border-radius: 10px;
+	background-color: white;
+	color:#0B614B;
+	text-align: center;
+	padding: 10px;
+	font-size: 17px;
+	margin: 10px auto;
+}
+
+.todobox { 
+	background-color: #8A0829;
+	border: 3px solid black;
+	color: white;
+	margin: auto;
+	padding:15px;
+	height: 20px;
+	width: 300px;
+	font-style: italic;
+	font-size:20px;
+	border-radius: 10px;
+}
+
+body {
+	background-color: #9BE1DF;
+	font-family: arial;
+
+}
+
+#userEntry {
+	width:250px;
+	height:30px;
+}
+
+.tableOfTodos {
+	margin:0 auto;
+	position:relative;
+
+}
+
+#error {
+	font-style: italic;
+	font-size: 16px;
+	margin:10px;
+}
