@@ -5,16 +5,20 @@
 		<title>Visualization of Linear Data Structures </title>
 	</head>
 	<body>
-		<h2>I want to visualize a ....</h2>
+		<h2 id="title">I want to visualize a </h2>
 		<div id="stackButton" class="button"> stack </div>
-		<div id="queueButton" class="button"> queue </div><br><hr>
-		<div id="selection"> </div>
-		<div id="dataEntry"> Enter your data: <textarea id="textBox"></textarea></div>
-		<div id="dataStructure">
-			<ul>
+		<div id="queueButton" class="button"> queue </div>
+		<span id="dataEntry"> 
+				Enter a piece of data <br>(6 character maximum) <br><form> <input type='text' maxLength='6' id="textBox"></form>
+			<div id="selection"> </div>
+			<div id="error"></div>
+		</span>
+		<span id="dataStructure">
+			<ul id="list">
 			</ul> 
-		<script src="/Users/lindamummy/practiceJS/exploration/jquery/src/jquery.js"></script>
-		 <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+		</span>
+	</span>
+		 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
 		<script src="sq.js" type="text/javascript"> </script>
 	<body>
 </html>
