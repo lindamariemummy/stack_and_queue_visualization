@@ -7,7 +7,7 @@ $(function() {
 		dataStructureType = "stack";
 		$("#queueButton").hide();
 		$("#stackButton").hide();
-		$("#title").text("Visualization of a stack data structure");
+		$("#title").html("<center>Visualization of a stack data structure<center>");
 		$("#dataEntry").show();
 		stack();
 	});
@@ -17,7 +17,7 @@ $(function() {
 		dataStructureType = "queue";
 		$("#stackButton").hide();
 		$("#queueButton").hide();
-		$("#title").text("Visualization of a queue data structure");
+		$("#title").html("<center>Visualization of a queue data structure<center>");
 		$("#dataEntry").show();
 		queue();
 	});
@@ -27,7 +27,6 @@ $(function() {
 		$("#selection").html("<button id='push'>push (add)</button><button id='pop'>pop (remove)</button>");
 
 		//listens for a click on the push button
-		
 		$("#push").on("click", function(){			
 			//reads in entry from textbox
 			$dataEntry = $("#textBox").val();
@@ -48,8 +47,8 @@ $(function() {
 
 	function queue() {
 		
-		//adds enqueue and unqueue buttons
-		$("#selection").html("<button id='enqueue'>enqueue (add)</button><button id='unqueue'>unqueue (remove)</button>");
+		//adds enqueue and dequeue buttons
+		$("#selection").html("<button id='enqueue'>enqueue (add)</button><button id='dequeue'>dequeue (remove)</button>");
 
 		//listens for a click on the enqueue button
 		$("#enqueue").on("click", function(){
@@ -67,8 +66,8 @@ $(function() {
 			}
 		});
 
-		$("#unqueue").on("click", function(){
-			unqueue();			
+		$("#dequeue").on("click", function(){
+			dequeue();			
 		});
 }
 
@@ -77,7 +76,6 @@ $(function() {
 	}
 
 	function popStack(text) {
-		//$("ul:first-child").remove();
 		$removeItem = $("li").filter(":first-child");	
 		$removeItem.slideUp("normal", function(){$(this).remove();});
 	}
@@ -86,7 +84,7 @@ $(function() {
 		$("ul").prepend("<li id='dataValue'>"+text+"</li>");
 	}
 
-	function unqueue() {
+	function dequeue() {
 		$removeItem = $("li").filter(":last-child");	
 		$removeItem.slideUp("normal", function(){$(this).remove();});
 	}
