@@ -1,4 +1,4 @@
-#userEntryBox {
+#dataEntry {
 	background-color: #8A0829;
 	border: 3px solid black;
 	color: white;
@@ -12,8 +12,8 @@
 }
 
 .button {
-	height: 35px;
-	width: 120px;
+	height: 30px;
+	width: 90px;
 	border: 3px solid black;
 	border-radius: 10px;
 	background-color: white;
@@ -38,19 +38,6 @@
 	margin: 10px auto;
 }
 
-.todobox { 
-	background-color: #8A0829;
-	border: 3px solid black;
-	color: white;
-	margin: auto;
-	padding:15px;
-	height: 20px;
-	width: 300px;
-	font-style: italic;
-	font-size:20px;
-	border-radius: 10px;
-}
-
 body {
 	background-color: #9BE1DF;
 	font-family: arial;
@@ -62,14 +49,13 @@ body {
 	height:30px;
 }
 
-.tableOfTodos {
-	margin:0 auto;
-	position:relative;
-
+#dataStructure {
+	height: 200px;
+	width: 800px;
 }
 
-#error {
-	font-style: italic;
-	font-size: 16px;
-	margin:10px;
+#dataValue {
+	height: 30px;
+	width: 30px;
 }
+
